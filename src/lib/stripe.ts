@@ -5,6 +5,7 @@ import {
 import { supabase } from './supabase';
 import { CollectionMode } from '@stripe/stripe-react-native/lib/typescript/src/types/PaymentSheet';
 
+
 const fetchStripekeys = async (totalAmount: number) => {
   const { data, error } = await supabase.functions.invoke('stripe-checkout', {
     body: {
