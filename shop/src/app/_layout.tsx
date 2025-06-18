@@ -1,0 +1,15 @@
+import { Stack } from "expo-router";
+
+export default function RootLayout() {
+  return (
+    <Stack>
+      <Stack.Screen name="(shop)" options={{ headerShown: false, title: 'Shop' }} />
+      <Stack.Screen name="categories" options={{ headerShown: false, title: 'Categories' }} />
+      <Stack.Screen name="products" options={{ headerShown: true, title: 'Products' }} />
+      <Stack.Screen name="cart" options={{ presentation: "modal", title: 'Shopping' }} />
+     <Stack.Screen name="auth" options={{ headerShown: true }} />
+
+      
+    </Stack>
+  );
+}
