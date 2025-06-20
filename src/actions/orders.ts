@@ -1,6 +1,6 @@
 'use server';
 
-import { createClient } from '@/supabase/server';
+import { createClient } from '../app/supabase/server';
 import { revalidatePath } from 'next/cache';
 import { sendNotification } from './notifications';
 

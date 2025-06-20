@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { ADMIN } from '../constants/constants';
+import { createClient } from '../supabase/client';
 
 export default async function AdminLayout({
   children,
@@ -27,3 +28,7 @@ export default async function AdminLayout({
   
     return <>{children}</>;
   }
+
+function redirect(arg0: string) {
+  throw new Error('Function not implemented.');
+}

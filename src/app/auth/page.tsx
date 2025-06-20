@@ -1,6 +1,6 @@
 'use client';
 
-import { authenticate } from '@/actions/auth';
+import { authenticate } from '../actions/auth';
 import { Button } from '@/components/ui/button';
 import {
   Form,

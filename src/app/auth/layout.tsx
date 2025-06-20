@@ -1,4 +1,4 @@
-import { createClient } from '@/supabase/server';
+import { createClient } from '../supabase/server';
 import { ReactNode } from 'react';
 import { ADMIN } from '../constants/constants';
 

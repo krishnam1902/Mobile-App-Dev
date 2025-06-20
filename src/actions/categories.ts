@@ -1,12 +1,12 @@
 'use server';
 import slugify from 'slugify';
 
-import { CategoriesWithProductsResponse } from '@/app/admin/categories/categories.types';
+import { CategoriesWithProductsResponse } from '../app/admin/categories/categories.types';
 import {
   CreateCategorySchemaServer,
   UpdateCategorySchema,
 } from '@/app/admin/categories/create-category.schema';
-import { createClient } from '@/supabase/server';
+import { createClient } from '../app/supabase/server';
 import { revalidatePath } from 'next/cache';
 
 export const getCategoriesWithProducts =

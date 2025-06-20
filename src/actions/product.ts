@@ -2,7 +2,7 @@
 
 import slugify from 'slugify';
 
-import { createClient } from '@/supabase/server';
+import { createClient } from '../app/supabase/server';
 import {
   ProductsWithCategoriesResponse,
   UpdateProductSchema,

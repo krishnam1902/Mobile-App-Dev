@@ -12,7 +12,7 @@ import { FontAwesome } from '@expo/vector-icons';
 
 import { useCartStore } from '../store/cart-store';
 import { supabase } from '../lib/supabase';
-import { Tables } from '../types/database.types';
+import { Tables } from '../supabase/types';
 
 export const ListHeader = ({
   categories,
